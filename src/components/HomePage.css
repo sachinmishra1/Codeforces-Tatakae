@@ -1,0 +1,108 @@
+.home-page {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_1280.jpg') no-repeat center center/cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-family: 'Impact', sans-serif;
+  text-shadow: 2px 2px 8px black;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.input {
+  margin: 10px 0;
+  padding: 15px;
+  width: 300px;
+  font-size: 18px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border-color: #ff4d4d;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 20px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #ff1a1a;
+  transform: scale(1.1);
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkbox-container input {
+  margin-right: 5px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

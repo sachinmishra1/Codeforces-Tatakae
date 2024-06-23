@@ -1,0 +1,91 @@
+.versus-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #333;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_1280.jpg') no-repeat center center/cover;
+}
+
+.fighter {
+  position: absolute;
+  text-align: center;
+}
+
+.top-left {
+  top: 100px;
+  left: 200px;
+}
+
+.bottom-right {
+  bottom: 100px;
+  right: 200px;
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.versus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeInOut 7s ease-in-out;
+}
+
+.begin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: yellow;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.versus h1 {
+  font-size: 4rem;
+  color: red;
+  font-family: 'Impact', sans-serif;
+  text-shadow: 2px 2px 8px black;
+}
+
+.begin h1 {
+  font-size: 4rem;
+  font-family: 'Impact', sans-serif;
+  text-shadow: 2px 2px 8px black;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
